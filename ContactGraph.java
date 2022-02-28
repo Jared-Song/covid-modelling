@@ -4,13 +4,13 @@ public interface ContactGraph {
     
     public abstract void addNode(String nodeLabel);
 
-    public abstract void deleteNode(String NodeId);
+    public abstract void deleteNode(String node);
 
-    public abstract void addEdge(int srcNodeId, int tarNodeId);
+    public abstract void addEdge(String srcNode, String tarNode);
 
-    public abstract void deleteEdge(int srcNodeId, int tarNodeId);
+    public abstract void deleteEdge(String srcNode, String tarNode);
 
-    public abstract void toggleNodeState(int NodeId, NodeState nodeState);
+    public abstract void toggleNodeState(String node, NodeState nodeState);
 
     public abstract String[] neighbourNodes(int srcNodeId);
 
